@@ -10,10 +10,10 @@
     <p>Click <a href="about.html">here</a> to go to the About page.</p>
 
     <script src="script.js"></script>
-
-    window.Clerk.mountSignUp(
-  document.getElementById("sign-up")
-);
-window.Clerk.openSignUp();
+import { SignIn } from "@clerk/nextjs";
+ 
+export default function Page() {
+  return <SignIn />;
+}
 </body>
 </html>
